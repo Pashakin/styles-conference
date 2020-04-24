@@ -152,6 +152,20 @@ body {
 
 /*
   ========================================
+  Leads
+  ========================================
+*/
+.lead {
+  text-align: center;
+}
+
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -194,20 +208,6 @@ strong {
 
 cite, em {
   font-style: italic;
-}
-
-/*
-  ========================================
-  Leads
-  ========================================
-*/
-.lead {
-  text-align: center;
-}
-
-.lead p {
-  font-size: 21px;
-  line-height: 33px;
 }
 
 /*
@@ -264,6 +264,17 @@ p a {
   color: #648880;
 }
 
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+
+.btn-default:hover {
+  background: #77a198;
+}
+
 /*
   ========================================
   Navigation
@@ -281,6 +292,51 @@ p a {
 
 .nav li:last-child {
   margin-right: 0;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+.logo {
+  border-top: 4px solid #648880;
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.primary-footer small {
+  float: left;
+  font-weight: 400;
 }
 
 /*
@@ -358,45 +414,51 @@ p a {
 
 /*
   ========================================
-  Primary header
+  Register
   ========================================
 */
-.logo {
-  border-top: 4px solid #648880;
-  float: left;
-  font-size: 48px;
-  font-weight: 100;
-  letter-spacing: .5px;
-  line-height: 44px;
-  padding: 40px 0 22px 0;
-  text-transform: uppercase;
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
 }
 
-.tagline {
-  margin: 66px 0 22px 0;
-  text-align: right;
+form {
+  margin-bottom: 22px;
 }
 
-.primary-nav {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  text-transform: uppercase;
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/*
-  ========================================
-  Primary footer
-  ========================================
-*/
-.primary-footer {
+.register-group label {
   color: #648880;
-  font-size: 14px;
-  padding-bottom: 44px;
-  padding-top: 44px;
+  cursor: pointer;
+  font-weight: 400;
 }
 
-.primary-footer small {
-  float: left;
-  font-weight: 400;
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+
+.register-group textarea {
+  height: 78px;
 }
